@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>MyData-小遊戲DEMO</title>
+  <link type="text/css" rel="stylesheet" href="./index.css" />
+  <script src="./game.js"></script>
+</head>
+
+<body>
+  <div class="game-block">
+    <div class="score-bar-box">
+      <div class="score-bar">Time: <strong id="time">0</strong></div>
+      <div class="score-bar">Score: <strong id="score">0</strong></div>
+    </div>
+    <div class="progress-bar">
+      距離：
+      <progress id="progress" value="0" max="100"></progress>
+    </div>
+    <!-- 遊戲的 “根” DOM節點，用來容納遊戲的主體部分 -->
+    <div id="chrome-dino"></div>
+  </div>
+  <button class="speed-up-btn" id="speed-up-btn">衝</button>
+  <button class="start-game-btn" id="start-game-btn">開始遊戲</button>
+  <!-- 題目彈窗 -->
+  <div class="modal" id="quetion-modal">
+    <div class="quetion-box">
+      <p class="discussion" id="quetion-discussion"></p>
+      <div class="options" id="quetion-options"></div>
+      <div class="anser-box" id="anser-box" style="display: none;">
+        <p class="result-mark" id="result"></p>
+        <p class="anser" id="anser"></p>
+        <p class="gift" id="gift"></p>
+        <p class="question-score" id="question-score"></p>
+        <button class="start-game-btn" id="keep-going-btn">繼續往前</button>
+      </div>
+    </div>
+  </div>
+  <!-- 遊戲結束彈窗 -->
+  <div class="modal" id="end-game-modal">
+    <div class="quetion-box">
+      <p class="title">遊戲結束！</p>
+      <p class="anser">你的成績：</p>
+      <p class="end-game-score">時間：<strong id="end-game-time"></strong> / 
+        分數：<strong id="end-game-score"></strong></p>
+        <button class="restart-btn" id="restart-btn">重新遊玩</button>
+      <button class="start-game-btn" id="endgame-submit">下一步</button>
+    </div>
+  </div>
+
+  <!-- 遊戲用到的雪碧圖，音頻資源 -->
+  <div id="offline-resources">
+    <img id="offline-resources-1x" src="./imgs/sprite.png" alt="sprite" />
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
