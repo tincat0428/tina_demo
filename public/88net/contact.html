@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="We are a results-driven, full-service digital agency based in Malaysia with development centers in multiple countries across the Asia Pacific. We are specialized in website design, mobile app development, and online marketing.">
+    <meta name="keywords" content="">
+    <title>88net</title>
+    <link rel="stylesheet" href="./assets/module/aos/aos.css">
+    <link rel="stylesheet" href="./assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="./assets/css/app.css?v=20230630">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <script src="./assets/module/p5.js@1.6.0/p5.min.js"></script>
+</head>
+
+
+<body class="contact-bg">
+    <h1>88net</h1>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <a class="nav-logo" href="./index.html"></a>
+                <ul class="nav-menu">
+                    <!-- nav menu template -->
+                    <template id="nav-menu-item">
+                        <li><a class="nav-menu-item"></a></li>
+                    </template>
+                </ul>
+                <button data-device="mobile" class="burger-btn">
+                    <span class="burger">
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <i class="kv-mask right"></i>
+        <section class="sec">
+            <div class="container contact-wrap">
+                <div class="contact-content">
+                    <div class="contact-img" data-aos="zoom-out-up">
+                        <img src="./assets/images/img/img_contact.webp" alt="">
+                    </div>
+                    <h2 class="heading white">
+                        <strong data-aos="zoom-out-up">Contact Us</strong>
+                    </h2>
+                    <p class="text white" data-aos="fade-up" data-aos-delay="500">
+                        We are committed to delivering exceptional
+                        service and support to our partners.OurMessag
+                        dedicated team is always available to assist
+                        you with any inguiries,technical integration
+                        or operational support you may need.
+                        Together,let's create a dynamic gaming
+                        platform that captivates players and drives
+                        your business success.
+                    </p>
+                </div>
+                <form id="form" class="contact-form" data-aos="fade-up" data-aos-delay="300" id="form">
+                    <div class="contact-form-box">
+                        <label class="label">Your Full Name <span class="require">*</span></label>
+                        <input type="text" class="input" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="contact-form-box">
+                        <label class="label">Phone</label>
+                        <input type="text" class="input" name="phone" id="phone" placeholder="+62 9456788888">
+                    </div>
+                    <div class="contact-form-box">
+                        <label class="label">Email <span class="require">*</span></label>
+                        <input type="text" class="input" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="contact-form-box">
+                        <label class="label">Message</label>
+                        <textarea name="message" class="textarea" id="message" cols="30" rows="4"
+                            placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="btn-submit" id="send" disabled>SEND</button>
+                    <a id="send"></a>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copy-right">
+            © 88ent 2023. All rights reserved.
+        </p>
+    </footer>
+    <!-- go top -->
+    <button onclick="window.scrollTo(0,0)" class="go-top-btn"><i class="icon-arrow_up"></i></button>
+    <!-- loader -->
+    <div class="loader-mask" id="loader">
+        <div class="loader"></div>
+    </div>
+</body>
+<script src="./assets/module/jquery@3.6.1/jquery-3.6.1.min.js"></script>
+<script src="./assets/module/aos/aos.js"></script>
+<script src="./assets/js/mySketch.js"></script>
+<script src="./assets/js/main.js?v=20230630"></script>
+<script>
+    const Page = new Contact()
+</script>
+
+</html>

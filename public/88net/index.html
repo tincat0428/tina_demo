@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="We are a results-driven, full-service digital agency based in Malaysia with development centers in multiple countries across the Asia Pacific. We are specialized in website design, mobile app development, and online marketing.">
+    <meta name="keywords" content="">
+    <title>88net</title>
+    <link rel="stylesheet" href="./assets/module/aos/aos.css">
+    <link rel="stylesheet" href="./assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="./assets/css/app.css?v=20230411">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <script src="./assets/module/p5.js@1.6.0/p5.min.js"></script>
+</head>
+
+<body>
+    <h1>88net</h1>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <a class="nav-logo" onclick="window.scrollTo(0,0)"></a>
+                <ul class="nav-menu">
+                    <!-- nav menu template -->
+                    <template id="nav-menu-item">
+                        <li><a class="nav-menu-item"></a></li>
+                    </template>
+                </ul>
+                <button data-device="mobile" class="burger-btn">
+                    <span class="burger">
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="home">
+        <i class="kv-mask"></i>
+        <section class="kv">
+            <h2 class="heading txt-center">
+                <strong data-aos="zoom-out-up">Own Your</strong>
+                <strong data-aos="zoom-out-up" data-aos-delay="300">Marketing Adventure</strong>
+            </h2>
+            <div class="home-img">
+                <img class="home-img-1" data-aos="fade-up" src="./assets/images/img/img_home_01.webp" alt="">
+                <img class="home-img-2" src="./assets/images/img/img_home_02.webp" alt="">
+                <img class="home-img-3" src="./assets/images/img/img_home_03.webp" alt="">
+            </div>
+        </section>
+        <section class="sec home-arrow-bg">
+            <div class="container">
+                <h2 class="heading white txt-center">
+                    <strong data-aos="zoom-out-up">Our Gaming</strong>
+                    <strong data-aos="zoom-out-up" data-aos-delay="300">Marketing Services</strong>
+                </h2>
+                <p class="text white small txt-center" data-aos="fade-up" data-aos-delay="300">
+                    Welcome to our world of digital excellence! As a
+                    Welcome to our game aggregator platform! Our platform offers the largest selection of games in the
+                    industry, catering to regulates markets and providing a wide range of gaming options for your
+                    customers.
+                </p>
+            </div>
+            <div class="container large">
+                <div class="service-block">
+                </div>
+                <template id="service-item">
+                    <div data-aos="fade-up">
+                        <div class="service-item">
+                            <div class="img">
+                                <img src="./assets/images/img/img_home_service_01.webp" alt="">
+                            </div>
+                            <h4 class="service-title title">Omni-Channel</h4>
+                            <p class="text small white txt-center">Provide your players with a holistic environment,
+                                allowing seamless
+                                interaction on desktop, mobile or retail</p>
+                        </div>
+                    </div>
+                </template>
+                <div class="analytic-block">
+                    <div class="content">
+                        <h2 class="heading white">
+                            <strong data-aos="zoom-out-up">Campaign Analytics</strong>
+                        </h2>
+                        <p class="text white" data-aos="fade-up">
+                            We also offer campaign analytics services to monitor the effectiveness of your marketing
+                            campaigns. Our team of analysts will help you track important performance indicators and
+                            provide
+                            valuable insights and recommendations for enhancement. It is vital to adjust your strategy
+                            accordingly for optimal success.
+                        </p>
+                    </div>
+                    <div class="analytic-img" data-aos="zoom-in-left">
+                        <img src="./assets/images/img/img_home_sport.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <i class="home-arrow-border border-1"></i>
+            <i class="home-arrow-border border-2"></i>
+        </section>
+        <section class="sec bottom-bg">
+            <div class="container sec-wrap">
+                <div class="contact-content">
+                    <h2 class="heading color small">
+                        <strong data-aos="zoom-out-up">Ready To Join 88ent Yet?</strong>
+                    </h2>
+                    <p class="text color" data-aos="fade-up">Looking for a partner for your online gaming business?
+                        We're glad you've come
+                        to us.</p>
+                    <a class="btn-primary" data-aos="fade-up" href="./contact.html">Contact Us</a>
+                </div>
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="500">
+                    <h4 class="contact-title">Get More Info From Us With The 88ent</h4>
+                    <label for="" class="label">Your Email <span class="require">*</span></label>
+                    <div class="form-wrap-box">
+                        <input type="email" class="input" placeholder="88ent@gmail.com" required>
+                        <button class="btn-send" type="submit">
+                            <i class="icon-send"></i>
+                        </button>
+                    </div>
+                    <span class="contact-notice">No spam. We promise.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copy-right">
+            © 88ent 2023. All rights reserved.
+        </p>
+    </footer>
+    <!-- go top -->
+    <button onclick="window.scrollTo(0,0)" class="go-top-btn"><i class="icon-arrow_up"></i></button>
+    <!-- loader -->
+    <div class="loader-mask" id="loader">
+        <div class="loader"></div>
+    </div>
+</body>
+<script src="./assets/module/jquery@3.6.1/jquery-3.6.1.min.js"></script>
+<script src="./assets/module/aos/aos.js"></script>
+<script src="./assets/js/mySketch.js"></script>
+<script src="./assets/js/main.js?v=20230417"></script>
+<script>
+    const SERVICE_DATA = {
+        containerClass: 'service-block',
+        templateId: 'service-item',
+        data: [
+            {
+                title: 'Omni-Channel',
+                content: 'Provide your players with a holistic environment, allowing seamless interaction on desktop, mobile or retail',
+                img: './assets/images/img/img_home_service_01.webp'
+            },
+            {
+                title: 'Scalable Technology',
+                content: 'We provide you with the technological flexibility to scale your business no matter the market requirements and characteristics',
+                img: './assets/images/img/img_home_service_02.webp'
+            },
+            {
+                title: '360° Tailored Ux',
+                content: 'All the features in one place, tailored to your specific preferences on a stable, flexible and scalable platform',
+                img: './assets/images/img/img_home_service_03.webp'
+            },
+        ]
+    }
+    const Page = new Home();
+</script>
+
+</html>

@@ -1,0 +1,11 @@
+footer {
+    // background: #0D1D74;
+    height: rem(60);
+    @include flex(center);
+}
+
+.copy-right {
+    color: #FFFFFF;
+    opacity: 0.8;
+    @include font(13, 19);
+}

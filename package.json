@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js -e js,html"
+    "dev": "nodemon app.js -e js,html,hbs"
   },
   "author": "Tina Hsu",
   "license": "ISC",

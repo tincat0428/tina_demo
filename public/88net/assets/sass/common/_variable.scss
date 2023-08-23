@@ -1,0 +1,100 @@
+@use "sass:math";
+
+// ----------
+// font
+// ----------
+@font-face {
+  font-family: "AeonikTRIAL";
+  src: url("../fonts/AeonikTRIAL/AeonikTRIAL-Regular.eot");
+  src: url("../fonts/AeonikTRIAL/AeonikTRIAL-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AeonikTRIAL/AeonikTRIAL-Regular.woff2") format("woff2"),
+    url("../fonts/AeonikTRIAL/AeonikTRIAL-Regular.ttf") format("truetype"),
+    url("../fonts/AeonikTRIAL/AeonikTRIAL-Regular.svg#aeonik") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AeonikTRIAL";
+  src: url("../fonts/AeonikTRIAL/AeonikTRIAL-Bold.eot");
+  src: url("../fonts/AeonikTRIAL/AeonikTRIAL-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AeonikTRIAL/AeonikTRIAL-Bold.woff2") format("woff2"),
+    url("../fonts/AeonikTRIAL/AeonikTRIAL-Bold.ttf") format("truetype"),
+    url("../fonts/AeonikTRIAL/AeonikTRIAL-Bold.svg#aeonik") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+// ----------
+// TOOL
+// ----------
+@function rem($value) {
+  $remValue: math.div($value, 16) * 1rem;
+  @return $remValue;
+}
+
+@mixin flex($justify: space-between, $alignItem: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $alignItem;
+}
+
+@mixin absolute($top:0, $left:0, $right: null, $bottom: null) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+@mixin icomoon($font, $size:inherit, $color:inherit) {
+  content: $font;
+  font-family: "icomoon";
+  font-size: $size;
+  color: $color;
+}
+
+@mixin RWD($device-w) {
+  @media screen and (max-width: $device-w) {
+    @content;
+  }
+}
+
+@mixin desktopHover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin font($fontSize, $lineHight:$fontSize, $fontWeight: null) {
+  font-size: rem($fontSize);
+  line-height: rem($lineHight);
+
+  @if $fontWeight {
+    font-weight: $fontWeight;
+  }
+}
+
+%cover {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  @include absolute;
+}
+
+%transition-015s {
+  transition: all .15s ease-in-out;
+}
+
+%transition-02s {
+  transition: all .2s ease-in-out;
+}
+
+%transition-03s {
+  transition: all .3s ease-in-out;
+}

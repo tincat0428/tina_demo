@@ -1,0 +1,65 @@
+.job-block {
+    margin-top: rem(70);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(40);
+
+    @at-root .mobile #{&} {
+        grid-template-columns: 1fr;
+    }
+}
+
+.job-item {
+    @include flex($alignItem:flex-start);
+    flex-direction: column;
+    border-radius: rem(20);
+    background: #fff;
+    box-shadow: 0 0 20px rgba(#2c44af, 0.4);
+    overflow: hidden;
+    padding: rem(77) 16%;
+    @extend %transition-03s;
+    height: 100%;
+
+    &:hover {
+        background: #3f63ff;
+
+        .heading {
+
+            strong {
+                color: #fff;
+            }
+
+            &::after {
+                background: #fff;
+            }
+        }
+
+        .text {
+            color: #fff;
+        }
+
+        .btn-primary {
+            background: #fff;
+            color: #3f63ff;
+        }
+    }
+
+    .text {
+        flex: auto;
+    }
+
+    .btn-primary {
+        margin: rem(60) auto 0;
+        &:hover{
+            min-width: rem(246);
+        }
+    }
+
+    @at-root .mobile #{&} {
+        padding: rem(50);
+
+        .btn-primary {
+            margin-top: rem(30);
+        }
+    }
+}

@@ -1,0 +1,187 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.nav-logo {
+    width: var(--logo-width);
+    transition: width ease-in-out 0.3s;
+    position: relative;
+    z-index: 2;
+    display: block;
+    aspect-ratio: 148/55;
+    background-image: url(../images/logo/88ent_logo.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    height: var(--header-height);
+    @extend %transition-03s;
+    background-color: transparent;
+
+    .container {
+        @include flex(flex-start);
+        height: 100%;
+        position: relative;
+    }
+
+    &.scroll {
+        height: rem(80);
+        background-color: rgba(#fff, 0.8);
+        backdrop-filter: blur(30px);
+    }
+
+    @at-root .mobile #{&} {
+
+        &.scroll {
+            height: rem(64);
+
+            .nav-logo {
+                width: 105px;
+            }
+        }
+    }
+}
+
+.nav-menu {
+    width: calc(100% - 2 * var(--logo-width));
+    @include flex(center, stretch);
+    gap: 12%;
+    @extend %transition-03s;
+    height: 100%;
+
+    @at-root .mobile #{&} {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 rem(40);
+        gap: 8vh;
+
+        &.active {
+            left: 0;
+        }
+    }
+}
+
+.nav-menu-item {
+    @include font(16, 24, bold);
+    height: 100%;
+    @include flex(center);
+    flex-direction: column;
+    position: relative;
+    @extend %transition-02s;
+    color: #1D39AA;
+
+    @at-root .mobile #{&} {
+        font-size: 20px;
+        line-height: 31px;
+        @include flex(flex-end);
+    }
+
+    &::after {
+        content: "";
+        @include absolute(calc(50% + #{rem(16)}), 50%);
+        width: 0;
+        height: 3px;
+        background: #70BCC3;
+        border-radius: 3px;
+        transform: translateX(-50%);
+        @extend %transition-02s;
+    }
+
+    &:hover {
+        &::after {
+            width: rem(70);
+        }
+    }
+
+    @at-root .scroll #{&} {
+        &.active {
+            &::after {
+                width: rem(70);
+            }
+        }
+    }
+
+}
+
+
+.burger-btn {
+    height: 100%;
+    z-index: 10;
+    @extend %transition-03s;
+    position: relative;
+    --color: #fff;
+
+    &.color {
+        --color: var(--main-color);
+    }
+
+    &.close {
+        --color: #fff;
+
+        .burger {
+            span {
+                opacity: 0;
+            }
+
+            &::before {
+                width: 26px;
+                transform: rotate(45deg);
+                transform-origin: 4px;
+            }
+
+            &::after {
+                width: 26px;
+                transform: rotate(-45deg);
+                transform-origin: 2px;
+            }
+        }
+    }
+
+    @at-root .scroll #{&} {
+        --color: #fff;
+    }
+}
+
+.burger {
+    width: 20px;
+    height: 16px;
+    display: block;
+    position: relative;
+
+    span {
+        background-color: var(--color);
+        width: 20px;
+        height: 2px;
+        @include absolute(calc(50% - 1px));
+        @extend %transition-03s;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        display: inline-block;
+        background-color: var(--color);
+        width: 20px;
+        height: 2px;
+        @extend %transition-03s;
+    }
+
+    &::before {
+        @include absolute;
+    }
+
+    &::after {
+        @include absolute($top: null, $bottom: 0);
+    }
+}

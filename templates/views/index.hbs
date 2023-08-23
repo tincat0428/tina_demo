@@ -11,35 +11,36 @@
 
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-5">Tina Demo</h1>
+        <h1 class="text-center mb-5 text-black-50">Tina Demo</h1>
+        <h3 class="text-center mb-5">探索 Canvas：超越 HTML 與 CSS 的繪畫畫布</h3>
         <div class="row row-cols-4">
-            <a class="link-underline-light" href="./test001" target="_blank" class="col">
+            {{#each projects}}
+            <a class="link-underline-light mb-4" href="{{url}}" target="_blank" class="col">
                 <div class="card" style="height: 100%">
-                    <img src="./assets/images/test001.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/{{image}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">滑鼠繪圖</h5>
-                        <p class="card-text">Canvas練習：滑鼠監聽、顏色參數變化</p>
+                        <h5 class="card-title fw-bold">{{title}}</h5>
+                        <p class="card-text">{{description}}</p>
                     </div>
                 </div>
             </a>
-            <a class="link-underline-light" href="./test002" target="_blank" class="col">
+            {{/each}}
+            <div class="mb-4" href="{{url}}" target="_blank" class="col">
                 <div class="card" style="height: 100%">
-                    <img src="./assets/images/test002.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">好評洗版</h5>
-                        <p class="card-text">Canvas練習：利用範圍內的亂數，隨機調整內容、顏色、位置分布</p>
+                    <div class="card-body" style="display: flex; flex-direction: column; justify-content: center">
+                        <h5 class="card-title fw-bold mb-4">Canvas 相關套件、參考作品</h5>
+                        <ul class="card-text">
+                            <li class="mb-3"><a class="link-opacity-100" href="https://openprocessing.org/"
+                                    target="_blank">P5.js-生成藝術大神們愛用涵式庫</a>
+                            </li>
+                            <li class="mb-3"><a class="link-opacity-100" href="https://threejs.org/"
+                                    target="_blank">Three.js-製作 3D 網頁都用它</a></li>
+                            <li class="mb-3"><a class="link-opacity-100" href="https://www.babylonjs.com/featuredemos/"
+                                    target="_blank">Babylon.js-物理模擬很強的遊戲引擎</a></li>
+                        </ul>
                     </div>
                 </div>
-            </a>
-            <a class="link-underline-light" href="./game" target="_blank" class="col">
-                <div class="card" style="height: 100%">
-                    <img src="./assets/images/game.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">趣味競賽</h5>
-                        <p class="card-text">Canvas練習：小恐龍遊戲改寫</p>
-                    </div>
-                </div>
-            </a>
+            </div>
         </div>
     </div>
 </body>

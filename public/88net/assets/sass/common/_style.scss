@@ -1,0 +1,172 @@
+// RWD定義
+$containerW: 1088px;
+$containerW_large: 1364px;
+$smallWeb: 1200px;
+$ipad: 1024px;
+$smallIpad: 765px;
+$mobile: 576px;
+$smallMobile: 480px;
+$breakPoint: $smallIpad;
+
+// common
+:root {
+    --header-height: #{rem(110)};
+    --logo-width: #{rem(148)};
+    --footer-height: #{rem(110)};
+    --main-color: #183196;
+    --kv-height: 100vh;
+}
+
+.mobile {
+    --header-height: 64px;
+    --logo-width: 90px;
+    --kv-height: 100vw;
+}
+
+// reset
+html {
+    font-family: "AeonikTRIAL", "微軟正黑體", "微软雅黑", sans-serif;
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    @include RWD($smallWeb) {
+        font-size: 14px;
+    }
+
+    @include RWD($ipad) {
+        font-size: 12px;
+    }
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0deg, #1D39AA 0%, #0D1D74 100%);
+    -webkit-overflow-scrolling: touch;
+
+    &.no-scroll {
+        max-height: 100vh;
+        overflow: hidden
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: text;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+ul,
+li {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    color: inherit;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:focus {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        outline: inherit;
+    }
+
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+h1 {
+    font-size: 0;
+    display: none;
+}
+
+strong {
+    appearance: none;
+    font-weight: normal;
+}
+
+img {
+    display: block;
+}
+
+input,
+textarea {
+    appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    resize: none;
+
+    &:focus {
+        appearance: none;
+        outline: none;
+    }
+}
+
+// Chrome, Safari, Edge, Opera //
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+// Firefox //
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+select:focus {
+    outline: none;
+}
+
+// default
+main {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    min-height: calc(100vh - var(--footer-height));
+    padding-top: var(--header-height);
+}
+
+// input
+input,
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    min-width: 1px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+    --width: #{$containerW};
+    max-width: calc(var(--width) + 2 * 20px);
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+
+    &.large {
+        --width: #{$containerW_large};
+    }
+
+    @at-root .mobile #{&} {
+        padding: 0 24px;
+    }
+}

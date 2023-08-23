@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="We are a results-driven, full-service digital agency based in Malaysia with development centers in multiple countries across the Asia Pacific. We are specialized in website design, mobile app development, and online marketing.">
+    <meta name="keywords" content="">
+    <title>88net</title>
+    <link rel="stylesheet" href="./assets/module/aos/aos.css">
+    <link rel="stylesheet" href="./assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="./assets/css/app.css?v=20230411">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <script src="./assets/module/p5.js@1.6.0/p5.min.js"></script>
+</head>
+
+<body>
+    <h1>88net</h1>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <a class="nav-logo" href="./index.html"></a>
+                <ul class="nav-menu">
+                    <!-- nav menu template -->
+                    <template id="nav-menu-item">
+                        <li><a class="nav-menu-item"></a></li>
+                    </template>
+                </ul>
+                <button data-device="mobile" class="burger-btn">
+                    <span class="burger">
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="about">
+        <i class="kv-mask left"></i>
+        <section class="kv">
+            <h2 class="heading">
+                <strong data-aos="zoom-out-up">WelcomeTo Our Game Aggregator Platform!</strong>
+            </h2>
+            <p class="text" data-aos="fade-up" data-aos-delay="300">Our platform offers the largest selection of games in the industry, catering to regulated
+                markets and providing a wide range of gaming options for your customers.</p>
+            <div class="about-img" data-aos="fade-up" data-aos-delay="500">
+                <img class="about-img-1" src="./assets/images/img/img_about_01.webp" alt="">
+                <img class="about-img-2" src="./assets/images/img/img_about_02.webp" alt="">
+            </div>
+        </section>
+        <section class="sec">
+            <div class="container large">
+                <div class="about-block"></div>
+                <template id="about-item">
+                    <div class="about-item">
+                        <h4 class="head">
+                            <i class="icon"></i>
+                            <strong class="title">Expertise</strong>
+                        </h4>
+                        <p class="text white txt-center">Over 10 years in 88ent</p>
+                    </div>
+                </template>
+                <div class="about-service-block">
+                    <div class="container">
+                        <h2 class="heading white txt-center">
+                            <strong data-aos="zoom-out-up">Marketing & Management</strong>
+                        </h2>
+                        <p class="text white txt-center">
+                            We can assist you in creating a strategy that suits your game and target audience.
+                            Furthermore,
+                            we can oversee your accounts to guarantee that your content is engaging and impactful.
+                        </p>
+                        <div class="about-service-grid"></div>
+                        <template id="service-item">
+                            <div class="about-service-item">
+                                <div class="iconbox">
+                                    <i class="icon"></i>
+                                </div>
+                                <h4 class="title">title</h4>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+            <i class="deco-dot left" data-aos="fade-right"></i>
+            <i class="deco-dot right" data-aos="fade-left"></i>
+        </section>
+        <section class="sec bottom-bg">
+            <div class="container sec-wrap">
+                <div class="contact-content">
+                    <h2 class="heading color small">
+                        <strong data-aos="zoom-out-up">Ready To Join 88ent Yet?</strong>
+                    </h2>
+                    <p class="text color" data-aos="fade-up">Looking for a partner for your online gaming business? We're glad you've come
+                        to us.</p>
+                    <a class="btn-primary" data-aos="fade-up" href="./contact.html">Contact Us</a>
+                </div>
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="500">
+                    <h4 class="contact-title">Get More Info From Us With The 88ent</h4>
+                    <label for="" class="label">Your Email <span class="require">*</span></label>
+                    <div class="form-wrap-box">
+                        <input type="email" class="input" placeholder="88ent@gmail.com" required>
+                        <button class="btn-send" type="submit">
+                            <i class="icon-send"></i>
+                        </button>
+                    </div>
+                    <span class="contact-notice">No spam. We promise.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copy-right">
+            © 88ent 2023. All rights reserved.
+        </p>
+    </footer>
+    <!-- go top -->
+    <button onclick="window.scrollTo(0,0)" class="go-top-btn"><i class="icon-arrow_up"></i></button>
+    <!-- loader -->
+    <div class="loader-mask" id="loader">
+        <div class="loader"></div>
+    </div>
+</body>
+<script src="./assets/module/jquery@3.6.1/jquery-3.6.1.min.js"></script>
+<script src="./assets/module/aos/aos.js"></script>
+<script src="./assets/js/mySketch.js"></script>
+<script src="./assets/js/main.js?v=20230417"></script>
+<script>
+    const ABOUT_DATA = {
+        containerClass: 'about-block',
+        templateId: 'about-item',
+        data: [
+            {
+                title: 'Expertise',
+                content: 'Over 10 years in 88ent',
+                icon: 'icon-expertise'
+            },
+            {
+                title: 'Innovation',
+                content: 'Advanced 88ent products',
+                icon: 'icon-innovation'
+            },
+            {
+                title: 'Security',
+                content: 'On point with modern security developments',
+                icon: 'icon-security'
+            },
+        ]
+    }
+    const SERVICE_DATA = {
+        containerClass: 'about-service-grid',
+        templateId: 'service-item',
+        data: [
+            {
+                title: 'Dashboard',
+                icon: 'icon-dashboard'
+            },
+            {
+                title: 'Player Analysis',
+                icon: 'icon-analysis'
+            },
+            {
+                title: 'Segmentation',
+                icon: 'icon-segmentation'
+            },
+            {
+                title: 'Reporting',
+                icon: 'icon-reporting'
+            },
+            {
+                title: 'Risk Exposure',
+                icon: 'icon-risk'
+            },
+            {
+                title: 'Acquisition And Retention',
+                icon: 'icon-acquisition'
+            },
+            {
+                title: 'Marketing',
+                icon: 'icon-marketing'
+            },
+            {
+                title: 'Churn Management',
+                icon: 'icon-churn'
+            },
+        ]
+
+    }
+    const Page = new About();
+</script>
+
+</html>
