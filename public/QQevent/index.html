@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/module/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="./assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <a class="nav-logo">
+                    <img src="./assets/images/logo.webp" alt="QQevent">
+                </a>
+                <div class="nav-user">
+                    <button class="nav-user-btn" onclick="handleClick('mobile', ()=>showAcctPage(true))">
+                        <i class="icon-admin"></i>
+                        <span data-device="web">ID number</span>
+                        <i data-device="web" class="icon-arrow"></i>
+                    </button>
+                    <ul class="nav-list" id="user" data-device="web">
+                        <li><a class="nav-list-item" onclick="showAcctPage(true)">
+                                Account History</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="language-menu">
+                    <button class="default" data-dropdown="#language">
+                        <span class="flag en-US"></span></button>
+                    <ul class="nav-list" id="language" data-device="web">
+                        <li>
+                            <a class="nav-list-item">
+                                <span class="flag en-US"></span>English
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-list-item">
+                                <span class="flag zh-CN"></span>简体中文
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-list-item">
+                                <span class="flag id-ID"></span>Bahash Indonesia
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-list-item">
+                                <span class="flag vi-VN"></span>Việt Ngữ
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-list-item">
+                                <span class="flag ms-MY"></span>Malaysia
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-list-item">
+                                <span class="flag th-TH"></span>ภาษาไทย
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-list-item">
+                                <span class="flag ko-KR"></span>Korea
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="KV">
+            <div class="container">
+                <div class="content">
+                    <h3 class="kv-heading">Big Win</h3>
+                    <p class="kv-text">Get into the QQEvent Arena carting away rewards !</p>
+                </div>
+                <div class="kv-img" data-device="web">
+                    <img src="./assets/images/coin.webp" alt="">
+                </div>
+            </div>
+            <i class="kv-deco front icon-shape"></i>
+            <i class="kv-deco back icon-shape"></i>
+        </section>
+        <section class="index">
+            <div class="container">
+                <div class="main-evnet-card red-purple-bg">
+                    <button class="btn-more left" data-tooltip="Tournament" onclick="modal('#modal-2', true)"><i
+                            class="icon-tournament"></i></button>
+                    <button class="btn-more right" data-tooltip="Terms & Conditions" onclick="eventMore('#info-0')">
+                        <i class="icon-info"></i></button>
+                    <!-- 展開資訊 -->
+                    <div class="event-more red-purple-bg" data-device="web" id="info-0">
+                        <h6 class="evnet-title">Terms & Conditions</h6>
+                        <div class="event-more-content">
+                            <ol>
+                                <li>If a player appears on more than one leaderboard, the player
+                                    will be
+                                    able to win more than one prize. The prize will be remitted in
+                                    72
+                                    hours
+                                    after each tournament round ends, please check changes in the
+                                    player’s
+                                    wallet balance.</li>
+                                <li>Players will be able to check their rank, rules, and terms
+                                    through
+                                    the
+                                    “Tournament” icon available in games.</li>
+                                <li>If there are two or more players with identical win scores, the
+                                    player
+                                    who scores it first will get a higher position on the
+                                    leaderboard.
+                                </li>
+                                <li>QQEvent reserves the right to disqualify a player or group of
+                                    players if
+                                    being found to use dishonest methods, cheat or intimidate other
+                                    players/operators, or found to be abusing </li>
+                                <li>If a player appears on more than one leaderboard, the player
+                                    will be
+                                    able to win more than one prize. The prize will be remitted in
+                                    72
+                                    hours
+                                    after each tournament round ends, please check changes in the
+                                    player’s
+                                    wallet balance.</li>
+                                <li>Players will be able to check their rank, rules, and terms
+                                    through
+                                    the
+                                    “Tournament” icon available in games.</li>
+                                <li>If there are two or more players with identical win scores, the
+                                    player
+                                    who scores it first will get a higher position on the
+                                    leaderboard.
+                                </li>
+                                <li>QQEvent reserves the right to disqualify a player or group of
+                                    players if
+                                    being found to use dishonest methods, cheat or intimidate other
+                                    players/operators, or found to be abusing </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <h4 class="evnet-title" data-device="mobile">Rewards Title</h4>
+                        <img class="event-box-bg" src="./assets/images/event_01/alien-bg.webp" alt="">
+                        <img class="event-box-img" src="./assets/images/event_01/title.webp" alt=""> <strong
+                            class="evnet-highlight main-type">CNY 893,201.99</strong>
+                        <strong class="evnet-highlight main-type">CNY <span class="large">893,201.99</span></strong>
+                    </div>
+                    <div class="content-box">
+                        <h4 class="evnet-title" data-device="web">Rewards Title</h4>
+                        <div class="event-time">
+                            <i class="icon-time"></i>
+                            <span>Ending in</span>
+                            <strong>2d 11h 10m 30s</strong>
+                        </div>
+                        <div class="event-index">
+                            <div class="head">
+                                <strong class="title">Rewards Info</strong>
+                            </div>
+                            <div class="body">
+                                <div class="item">
+                                    <span class="text">Rewards Period</span>
+                                    <span class="value">0001</span>
+                                </div>
+                                <div class="item">
+                                    <span class="text">Rewards Period</span>
+                                    <span class="value">0001</span>
+                                </div>
+                                <div class="item">
+                                    <span class="text">Rewards Period</span>
+                                    <span class="value">0001</span>
+                                </div>
+                                <div class="item">
+                                    <span class="text">Rewards Period</span>
+                                    <span class="value">0001</span>
+                                </div>
+                                <div class="item">
+                                    <span class="text">Rewards Period</span>
+                                    <div class="value">
+                                        <span class="row-text">Min $ 500.00</span>
+                                        <span class="row-text">Max $ 1,000.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn primary">抢红包</button>
+                    </div>
+                </div>
+                <h3 class="index-heading">Tournaments</h3>
+                <div class="events-group">
+                    <div class="event-card blue-bg">
+                        <button class="btn-more left" data-tooltip="Tournament" onclick="modal('#modal-1', true)">
+                            <i class="icon-tournament"></i></button>
+                        <button class="btn-more right" data-tooltip="Terms & Conditions" onclick="eventMore('#info-1')">
+                            <i class="icon-info"></i></button>
+                        <!-- 展開資訊 -->
+                        <div class="event-more blue-bg" data-device="web" id="info-1">
+                            <h6 class="evnet-title">Terms & Conditions</h6>
+                            <div class="event-more-content">
+                                <ol>
+                                    <li>If a player appears on more than one leaderboard, the player
+                                        will be
+                                        able to win more than one prize. The prize will be remitted in
+                                        72
+                                        hours
+                                        after each tournament round ends, please check changes in the
+                                        player’s
+                                        wallet balance.</li>
+                                    <li>Players will be able to check their rank, rules, and terms
+                                        through
+                                        the
+                                        “Tournament” icon available in games.</li>
+                                    <li>If there are two or more players with identical win scores, the
+                                        player
+                                        who scores it first will get a higher position on the
+                                        leaderboard.
+                                    </li>
+                                    <li>QQEvent reserves the right to disqualify a player or group of
+                                        players if
+                                        being found to use dishonest methods, cheat or intimidate other
+                                        players/operators, or found to be abusing </li>
+                                    <li>If a player appears on more than one leaderboard, the player
+                                        will be
+                                        able to win more than one prize. The prize will be remitted in
+                                        72
+                                        hours
+                                        after each tournament round ends, please check changes in the
+                                        player’s
+                                        wallet balance.</li>
+                                    <li>Players will be able to check their rank, rules, and terms
+                                        through
+                                        the
+                                        “Tournament” icon available in games.</li>
+                                    <li>If there are two or more players with identical win scores, the
+                                        player
+                                        who scores it first will get a higher position on the
+                                        leaderboard.
+                                    </li>
+                                    <li>QQEvent reserves the right to disqualify a player or group of
+                                        players if
+                                        being found to use dishonest methods, cheat or intimidate other
+                                        players/operators, or found to be abusing </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <h4 class="evnet-title">Rewards Title</h4>
+                            <img class="event-box-bg" src="./assets/images/event_03/img.webp" alt="">
+                            <strong class="evnet-highlight">$ 20,000 every Week</strong>
+                        </div>
+                        <div class="content-box">
+                            <div class="event-time">
+                                <i class="icon-time"></i>
+                                <span>Ending in</span>
+                                <strong>2d 11h 10m 30s</strong>
+                            </div>
+                            <div class="event-index">
+                                <div class="head">
+                                    <strong class="title">Rewards Info</strong>
+                                </div>
+                                <div class="body">
+                                    <div class="item">
+                                        <span class="text">Rewards Period</span>
+                                        <span class="value">0001</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">Rewards Period</span>
+                                        <span class="value">0001</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">Rewards Period</span>
+                                        <span class="value">0001</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">-</span>
+                                        <span class="value">-</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">-</span>
+                                        <span class="value">-</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card purple-bg">
+                        <button class="btn-more left" data-tooltip="Tournament" onclick="modal('#modal-1', true)">
+                            <i class="icon-tournament"></i></button>
+                        <button class="btn-more right" data-tooltip="Terms & Conditions" onclick="eventMore('#info-2')">
+                            <i class="icon-info"></i></button>
+                        <!-- 展開資訊 -->
+                        <div class="event-more purple-bg" data-device="web" id="info-2">
+                            <h6 class="evnet-title">Terms & Conditions</h6>
+                            <div class="event-more-content">
+                                <ol>
+                                    <li>If a player appears on more than one leaderboard, the player
+                                        will be
+                                        able to win more than one prize. The prize will be remitted in
+                                        72
+                                        hours
+                                        after each tournament round ends, please check changes in the
+                                        player’s
+                                        wallet balance.</li>
+                                    <li>Players will be able to check their rank, rules, and terms
+                                        through
+                                        the
+                                        “Tournament” icon available in games.</li>
+                                    <li>If there are two or more players with identical win scores, the
+                                        player
+                                        who scores it first will get a higher position on the
+                                        leaderboard.
+                                    </li>
+                                    <li>QQEvent reserves the right to disqualify a player or group of
+                                        players if
+                                        being found to use dishonest methods, cheat or intimidate other
+                                        players/operators, or found to be abusing </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <h4 class="evnet-title">Rewards Title</h4>
+                            <img class="event-box-bg" src="./assets/images/event_02/alien-bg.webp" alt="">
+                            <img class="event-box-img" src="./assets/images/event_02/title.webp" alt="">
+                            <strong class="evnet-highlight">$ 888,000 Free Spins Weekly</strong>
+                        </div>
+                        <div class="content-box">
+                            <div class="event-time">
+                                <i class="icon-time"></i>
+                                <span>Ending in</span>
+                                <strong>2d 11h 10m 30s</strong>
+                            </div>
+                            <div class="event-index">
+                                <div class="head">
+                                    <strong class="title">Rewards Info</strong>
+                                </div>
+                                <div class="body">
+                                    <div class="item">
+                                        <span class="text">Rewards Period</span>
+                                        <span class="value">0001</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">Rewards Period</span>
+                                        <span class="value">0001</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">Rewards Period</span>
+                                        <span class="value">0001</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">-</span>
+                                        <span class="value">-</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">-</span>
+                                        <span class="value">-</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card orange-bg">
+                        <button class="btn-more left" data-tooltip="Tournament" onclick="modal('#modal-1', true)">
+                            <i class="icon-tournament"></i>
+                        </button>
+                        <button class="btn-more right" data-tooltip="Terms & Conditions" onclick="eventMore('#info-3')">
+                            <i class="icon-info"></i></button>
+                        <!-- 展開資訊 -->
+                        <div class="event-more orange-bg" data-device="web" id="info-3">
+                            <h6 class="evnet-title">Terms & Conditions</h6>
+                            <div class="event-more-content">
+                                <ol>
+                                    <li>If a player appears on more than one leaderboard, the player
+                                        will be
+                                        able to win more than one prize. The prize will be remitted in
+                                        72
+                                        hours
+                                        after each tournament round ends, please check changes in the
+                                        player’s
+                                        wallet balance.</li>
+                                    <li>Players will be able to check their rank, rules, and terms
+                                        through
+                                        the
+                                        “Tournament” icon available in games.</li>
+                                    <li>If there are two or more players with identical win scores, the
+                                        player
+                                        who scores it first will get a higher position on the
+                                        leaderboard.
+                                    </li>
+                                    <li>QQEvent reserves the right to disqualify a player or group of
+                                        players if
+                                        being found to use dishonest methods, cheat or intimidate other
+                                        players/operators, or found to be abusing </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <h4 class="evnet-title">Rewards Title</h4>
+                            <img class="event-box-bg" src="./assets/images/event_04/img.webp" alt="">
+                            <strong class="evnet-highlight">$ 10,000 every Week</strong>
+                        </div>
+                        <div class="content-box">
+                            <div class="event-time">
+                                <i class="icon-time"></i>
+                                <span>Ending in</span>
+                                <strong>2d 11h 10m 30s</strong>
+                            </div>
+                            <div class="event-index">
+                                <div class="head">
+                                    <strong class="title">Rewards Info</strong>
+                                </div>
+                                <div class="body">
+                                    <div class="item">
+                                        <span class="text">Rewards Period</span>
+                                        <span class="value">0001</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">Rewards Period</span>
+                                        <span class="value">0001</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">Rewards Period</span>
+                                        <span class="value">0001</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">-</span>
+                                        <span class="value">-</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">-</span>
+                                        <span class="value">-</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Account Page -->
+    <section class="account-page hidden" id="acct-page">
+        <div class="container">
+            <button class="modal-close-btn" data-device="web" onclick="showAcctPage()">
+                <i class="icon-close"></i></button>
+            <h3 class="heading acct">Account History</h3>
+            <button class="back-btn" data-device="mobile" onclick="showAcctPage()">
+                <i class="icon-arrow"></i></button>
+            <div class="acct-user" data-device="mobile">
+                <i class="icon-admin"></i>
+                <span>ID number</span>
+            </div>
+            <div class="block">
+                <!-- menu -->
+                <aside class="acct-menu">
+                    <a onclick="changeModalTab('#acct-page .acct-index', 0)" class="acc-menu-item active">
+                        <span class="mark-gift"></span>
+                        <span class="name">QQ Event 兌換</span>
+                    </a>
+                    <a onclick="changeModalTab('#acct-page .acct-index', 1)" class="acc-menu-item">
+                        <span class="mark-report"></span>
+                        <span class="name">QQ Event Report</span>
+                    </a>
+                    <a class="acc-menu-item">
+                        <span class="mark-redenvelope"></span>
+                        <span class="name">Angpow Report</span>
+                    </a>
+                    <a class="acc-menu-item">
+                        <span class="mark-goldencup"></span>
+                        <span class="name">Tournament Report</span>
+                    </a>
+                </aside>
+                <!-- event 兌換 -->
+                <div class="acct-index fade-in">
+                    <div class="inner">
+                        <h4 class="sub-heading">QQ Event 兌換</h4>
+                        <form class="form-grid">
+                            <div class="form-box">
+                                <label for="" class="label">
+                                    Available Balance <span class="label-tag">QQ</span>
+                                </label>
+                                <input class="input" type="text" readonly value="7,895.00">
+                            </div>
+                            <div class="form-box">
+                                <label for="" class="label">
+                                    Available Balance <span class="label-tag">Currency</span>
+                                </label>
+                                <input class="input" type="text" readonly value="MYR">
+                            </div>
+                            <div class="form-box">
+                                <label for="" class="label">
+                                    Transfer to <span class="label-tag">Member</span>
+                                </label>
+                                <input class="input" type="text" placeholder="a10012@00023">
+                            </div>
+                            <div class="form-box">
+                                <label for="" class="label">
+                                    Transfer Amount
+                                    <p class="label-info">100 QQ Eevent = 1 IC Credit</p>
+                                </label>
+                                <div class="input-box">
+                                    <input class="input" type="text" placeholder="1,000">
+                                    <button class="input-btn">Max</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-btn-group">
+                        <button class="btn primary small" data-device="web">Swap</button>
+                        <button class="btn primary full-width" data-device="mobile">Swap</button>
+                    </div>
+                </div>
+                <!-- report -->
+                <div class="acct-index fade-in" style="display: none;">
+                    <h4 class="sub-heading">QQ Event Report</h4>
+                    <label class="label" onclick="handleClick('mobile',function(){
+                            toggleClass('#date-selector', 'active');
+                            toggleClass('#collapes-arrow', 'rotate')})">
+                        Date Range <i class="icon-arrow rotate" data-device="mobile" id="collapes-arrow"></i></label>
+                    <div class="form-row">
+                        <div class="collapes" id="date-selector">
+                            <div class="date-form-box">
+                                <input class="date-input" id="dateInput">
+                                <div class="date-selector">
+                                    <button class="default" data-dropdown="#quickdate">This Week
+                                        <i class="icon-chevronLeft"></i></button>
+                                    <ul class="nav-list" id="quickdate">
+                                        <li>
+                                            <a class="nav-list-item">
+                                                Today</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-list-item">
+                                                Yesterday</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-list-item">
+                                                This Week</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-list-item">
+                                                Last Week</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn secondary small rwd">
+                                <i class="icon-search"></i>
+                                <span data-device="web">SEARCH</span>
+                            </button>
+                        </div>
+                        <button class="btn download small">
+                            <i class="icon-download"></i>
+                            Excel
+                        </button>
+                    </div>
+                    <div class="no-result" style="display: none;">No Result.</div>
+                    <div class="result-table" data-device="web">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="txt-left">Date / Time </th>
+                                    <th>之前餘額</th>
+                                    <th>交易類型</th>
+                                    <th>數額</th>
+                                    <th class="txt-right">目前數額</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="txt-left">2024/03/08 15:30:45</td>
+                                    <td>8,392.77</td>
+                                    <td>Angpow</td>
+                                    <td>14,394,245.99</td>
+                                    <td class="txt-right">1,000 / 800</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">2024/03/08 15:30:45</td>
+                                    <td>8,392.77</td>
+                                    <td>Angpow</td>
+                                    <td>14,394,245.99</td>
+                                    <td class="txt-right">1,000 / 800</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">2024/03/08 15:30:45</td>
+                                    <td>8,392.77</td>
+                                    <td>Angpow</td>
+                                    <td>14,394,245.99</td>
+                                    <td class="txt-right">1,000 / 800</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">2024/03/08 15:30:45</td>
+                                    <td>8,392.77</td>
+                                    <td>Angpow</td>
+                                    <td>14,394,245.99</td>
+                                    <td class="txt-right">1,000 / 800</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">2024/03/08 15:30:45</td>
+                                    <td>8,392.77</td>
+                                    <td>Angpow</td>
+                                    <td>14,394,245.99</td>
+                                    <td class="txt-right">1,000 / 800</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">2024/03/08 15:30:45</td>
+                                    <td>8,392.77</td>
+                                    <td>Angpow</td>
+                                    <td>14,394,245.99</td>
+                                    <td class="txt-right">1,000 / 800</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">2024/03/08 15:30:45</td>
+                                    <td>8,392.77</td>
+                                    <td>Angpow</td>
+                                    <td>14,394,245.99</td>
+                                    <td class="txt-right">1,000 / 800</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">2024/03/08 15:30:45</td>
+                                    <td>8,392.77</td>
+                                    <td>Angpow</td>
+                                    <td>14,394,245.99</td>
+                                    <td class="txt-right">1,000 / 800</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">2024/03/08 15:30:45</td>
+                                    <td>8,392.77</td>
+                                    <td>Angpow</td>
+                                    <td>14,394,245.99</td>
+                                    <td class="txt-right">1,000 / 800</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">2024/03/08 15:30:45</td>
+                                    <td>8,392.77</td>
+                                    <td>Angpow</td>
+                                    <td>14,394,245.99</td>
+                                    <td class="txt-right">1,000 / 800</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">2024/03/08 15:30:45</td>
+                                    <td>8,392.77</td>
+                                    <td>Angpow</td>
+                                    <td>14,394,245.99</td>
+                                    <td class="txt-right">1,000 / 800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="result-list" data-device="mobile">
+                        <div class="result-item">
+                            <span class="result-tag blue">Tournament</span>
+                            <div class="row border">
+                                <div class="box">
+                                    <span class="value">2024/03/08 15:30:45</span>
+                                    <span class="name">Date / Time</span>
+                                </div>
+                                <div class="box">
+                                    <span class="value">7,895.00</span>
+                                    <span class="name">之前餘額</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="box">
+                                    <span class="value">2024/03/08 15:30:45</span>
+                                    <span class="name">Date / Time</span>
+                                </div>
+                                <div class="box">
+                                    <span class="value">7,895.00</span>
+                                    <span class="name">之前餘額</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-tag red">Angpow</span>
+                            <div class="row border">
+                                <div class="box">
+                                    <span class="value">2024/03/08 15:30:45</span>
+                                    <span class="name">Date / Time</span>
+                                </div>
+                                <div class="box">
+                                    <span class="value">7,895.00</span>
+                                    <span class="name">之前餘額</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="box">
+                                    <span class="value">2024/03/08 15:30:45</span>
+                                    <span class="name">Date / Time</span>
+                                </div>
+                                <div class="box">
+                                    <span class="value">7,895.00</span>
+                                    <span class="name">之前餘額</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-tag red">Angpow</span>
+                            <div class="row border">
+                                <div class="box">
+                                    <span class="value">2024/03/08 15:30:45</span>
+                                    <span class="name">Date / Time</span>
+                                </div>
+                                <div class="box">
+                                    <span class="value">7,895.00</span>
+                                    <span class="name">之前餘額</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="box">
+                                    <span class="value">2024/03/08 15:30:45</span>
+                                    <span class="name">Date / Time</span>
+                                </div>
+                                <div class="box">
+                                    <span class="value">7,895.00</span>
+                                    <span class="name">之前餘額</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-tag blue">Tournament</span>
+                            <div class="row border">
+                                <div class="box">
+                                    <span class="value">2024/03/08 15:30:45</span>
+                                    <span class="name">Date / Time</span>
+                                </div>
+                                <div class="box">
+                                    <span class="value">7,895.00</span>
+                                    <span class="name">之前餘額</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="box">
+                                    <span class="value">2024/03/08 15:30:45</span>
+                                    <span class="name">Date / Time</span>
+                                </div>
+                                <div class="box">
+                                    <span class="value">7,895.00</span>
+                                    <span class="name">之前餘額</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-tag blue">Tournament</span>
+                            <div class="row border">
+                                <div class="box">
+                                    <span class="value">2024/03/08 15:30:45</span>
+                                    <span class="name">Date / Time</span>
+                                </div>
+                                <div class="box">
+                                    <span class="value">7,895.00</span>
+                                    <span class="name">之前餘額</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="box">
+                                    <span class="value">2024/03/08 15:30:45</span>
+                                    <span class="name">Date / Time</span>
+                                </div>
+                                <div class="box">
+                                    <span class="value">7,895.00</span>
+                                    <span class="name">之前餘額</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-tag blue">Tournament</span>
+                            <div class="row border">
+                                <div class="box">
+                                    <span class="value">2024/03/08 15:30:45</span>
+                                    <span class="name">Date / Time</span>
+                                </div>
+                                <div class="box">
+                                    <span class="value">7,895.00</span>
+                                    <span class="name">之前餘額</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="box">
+                                    <span class="value">2024/03/08 15:30:45</span>
+                                    <span class="name">Date / Time</span>
+                                </div>
+                                <div class="box">
+                                    <span class="value">7,895.00</span>
+                                    <span class="name">之前餘額</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paginate">
+                        <button class="icon-chevronLeft"></button>
+                        <button class="page active">1</button>
+                        <button class="page">2</button>
+                        <button class="page">3</button>
+                        <span class="dot">...</span>
+                        <button class="page">99</button>
+                        <button class="page">100</button>
+                        <button class="icon-chevronRight"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tooltip -->
+    <div class="tooltip" id="tooltip"></div>
+    <!-- Modal Demo: mobile T&C -->
+    <div class="modal" id="modal-0">
+        <div class="event-modal purple-bg">
+            <img class="event-modal-bg" src="./assets/images/event_02/alien-bg.webp" alt="">
+
+            <div class="event-modal-head">
+                <strong>Event Title Tournament</strong>
+            </div>
+            <div class="img-box modal-rwd-type">
+                <img class="event-box-img" src="./assets/images/event_02/title.webp" alt="">
+                <strong class="evnet-highlight">$ 20,000 every Week</strong>
+            </div>
+            <div class="event-modal-body">
+                <div class="event-more">
+                    <h6 class="evnet-title">Terms & Conditions</h6>
+                    <div class="event-more-content">
+                        <ol>
+                            <li>If a player appears on more than one leaderboard, the player
+                                will be
+                                able to win more than one prize. The prize will be remitted in
+                                72
+                                hours
+                                after each tournament round ends, please check changes in the
+                                player’s
+                                wallet balance.</li>
+                            <li>Players will be able to check their rank, rules, and terms
+                                through
+                                the
+                                “Tournament” icon available in games.</li>
+                            <li>If there are two or more players with identical win scores, the
+                                player
+                                who scores it first will get a higher position on the
+                                leaderboard.
+                            </li>
+                            <li>QQEvent reserves the right to disqualify a player or group of
+                                players if
+                                being found to use dishonest methods, cheat or intimidate other
+                                players/operators, or found to be abusing </li>
+                            <li>If a player appears on more than one leaderboard, the player
+                                will be
+                                able to win more than one prize. The prize will be remitted in
+                                72
+                                hours
+                                after each tournament round ends, please check changes in the
+                                player’s
+                                wallet balance.</li>
+                            <li>Players will be able to check their rank, rules, and terms
+                                through
+                                the
+                                “Tournament” icon available in games.</li>
+                            <li>If there are two or more players with identical win scores, the
+                                player
+                                who scores it first will get a higher position on the
+                                leaderboard.
+                            </li>
+                            <li>QQEvent reserves the right to disqualify a player or group of
+                                players if
+                                being found to use dishonest methods, cheat or intimidate other
+                                players/operators, or found to be abusing </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group fixed-bottom">
+                <button class="modal-close-btn" onclick="modal('#modal-0', false)">
+                    <i class="icon-close"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Demo 1-->
+    <div class="modal" id="modal-1">
+        <div class="event-modal purple-bg">
+            <img class="event-modal-bg" src="./assets/images/event_02/alien-bg.webp" alt="">
+
+            <!-- web -->
+            <button data-device="web" class="modal-close-btn" onclick="modal('#modal-1', false)">
+                <i class="icon-close"></i></button>
+            <div class="inner" data-device="web">
+                <div class="event-modal-head">
+                    <strong>Event Title Tournament</strong>
+                </div>
+                <div class="event-modal-body">
+                    <div class="col-3">
+                        <div class="img-box">
+                            <img class="event-box-img" src="./assets/images/event_02/title.webp" alt="">
+                            <strong class="evnet-highlight">$ 20,000 every Week</strong>
+                        </div>
+                        <div class="content-box">
+                            <div class="event-time">
+                                <i class="icon-time"></i>
+                                <span>Ending in</span>
+                                <strong>2d 11h 10m 30s</strong>
+                            </div>
+                            <div class="event-index">
+                                <div class="head">
+                                    <strong class="title">Rewards Info</strong>
+                                </div>
+                                <div class="body">
+                                    <div class="item">
+                                        <span class="text">Prize Pool</span>
+                                        <span class="value">$ 10,000 Free</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">Prize Pool</span>
+                                        <span class="value">$ 10,000 Free</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">Prize Pool</span>
+                                        <span class="value">$ 10,000 Free</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">Prize Pool</span>
+                                        <span class="value">$ 10,000 Free</span>
+                                    </div>
+                                    <div class="item event-details" id="details1">
+                                        <div class="summary" onclick="openDetail('#details1','#modal-1 .inner')">
+                                            <span class="text">Terms & conditions</span>
+                                        </div>
+                                        <div class="detail">
+                                            <ol>
+                                                <li>If a player appears on more than one leaderboard, the player
+                                                    will be
+                                                    able to win more than one prize. The prize will be remitted in
+                                                    72
+                                                    hours
+                                                    after each tournament round ends, please check changes in the
+                                                    player’s
+                                                    wallet balance.</li>
+                                                <li>Players will be able to check their rank, rules, and terms
+                                                    through
+                                                    the
+                                                    “Tournament” icon available in games.</li>
+                                                <li>If there are two or more players with identical win scores, the
+                                                    player
+                                                    who scores it first will get a higher position on the
+                                                    leaderboard.
+                                                </li>
+                                                <li>QQEvent reserves the right to disqualify a player or group of
+                                                    players if
+                                                    being found to use dishonest methods, cheat or intimidate other
+                                                    players/operators, or found to be abusing </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="event-index " style="margin-top: 1.3rem;">
+                            <div class="head">
+                                <strong class="title">Leaderboard</strong>
+                            </div>
+                            <div class="body scroll">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Rank</th>
+                                            <th>Prize</th>
+                                            <th>Player</th>
+                                            <th>Win</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="highlight">
+                                            <td><span class="rank-1"></span></td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                        <tr class="highlight">
+                                            <td><span class="rank-2"></span></td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                        <tr class="highlight">
+                                            <td><span class="rank-3"></span></td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>10,000.00 IDR</td>
+                                            <td>mik******</td>
+                                            <td>9,968.69 IDR</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <button class="btn primary full-width">抢红包</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile -->
+            <div class="event-modal-head" data-device="mobile">
+                <strong>Event Title Tournament</strong>
+            </div>
+            <div class="img-box modal-rwd-type" data-device="mobile">
+                <img class="event-box-img" src="./assets/images/event_02/title.webp" alt="">
+                <strong class="evnet-highlight">$ 20,000 every Week</strong>
+            </div>
+            <div class="event-time" data-device="mobile">
+                <i class="icon-time"></i>
+                <span>Ending in</span>
+                <strong>2d 11h 10m 30s</strong>
+            </div>
+            <div class="event-modal-body" data-device="mobile">
+                <div class="event-index">
+                    <div class="modal-tab">
+                        <a class="tab active" onclick="changeModalTab('#content > .body',0)">Rewards Info</a>
+                        <a class="tab" onclick="changeModalTab('#content > .body',1)">Leaderboard</a>
+                    </div>
+                    <div class="inner" id="content">
+                        <div class="body fade-in">
+                            <div class="item">
+                                <span class="text">Prize Pool</span>
+                                <span class="value">$ 10,000 Free</span>
+                            </div>
+                            <div class="item">
+                                <span class="text">Prize Pool</span>
+                                <span class="value">$ 10,000 Free</span>
+                            </div>
+                            <div class="item">
+                                <span class="text">Prize Pool</span>
+                                <span class="value">$ 10,000 Free</span>
+                            </div>
+                            <div class="item">
+                                <span class="text">Prize Pool</span>
+                                <span class="value">$ 10,000 Free</span>
+                            </div>
+                            <div class="item event-details" id="details1">
+                                <div class="summary" onclick="openDetail('#details1','#modal-1 .inner')">
+                                    <span class="text">Terms & conditions</span>
+                                </div>
+                                <div class="detail">
+                                    <ol>
+                                        <li>If a player appears on more than one leaderboard, the player
+                                            will be
+                                            able to win more than one prize. The prize will be remitted in
+                                            72
+                                            hours
+                                            after each tournament round ends, please check changes in the
+                                            player’s
+                                            wallet balance.</li>
+                                        <li>Players will be able to check their rank, rules, and terms
+                                            through
+                                            the
+                                            “Tournament” icon available in games.</li>
+                                        <li>If there are two or more players with identical win scores, the
+                                            player
+                                            who scores it first will get a higher position on the
+                                            leaderboard.
+                                        </li>
+                                        <li>QQEvent reserves the right to disqualify a player or group of
+                                            players if
+                                            being found to use dishonest methods, cheat or intimidate other
+                                            players/operators, or found to be abusing </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body fade-in" style="display: none;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Prize</th>
+                                        <th>Player</th>
+                                        <th>Win</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight">
+                                        <td><span class="rank-1"></span></td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr class="highlight">
+                                        <td><span class="rank-2"></span></td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr class="highlight">
+                                        <td><span class="rank-3"></span></td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>10,000.00 IDR</td>
+                                        <td>mik******</td>
+                                        <td>9,968.69 IDR</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group fixed-bottom" data-device="mobile">
+                <button class="btn primary full-width">抢红包</button>
+                <button class="modal-close-btn" onclick="modal('#modal-1', false)">
+                    <i class="icon-close"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Demo 2-->
+    <div class="modal" id="modal-2">
+        <div class="event-modal red-purple-bg">
+            <img class="event-modal-bg" src="./assets/images/event_01/alien-bg.webp" alt="">
+
+            <!-- web -->
+            <button data-device="web" class="modal-close-btn" onclick="modal('#modal-2',false)">
+                <i class="icon-close"></i></button>
+            <div class="inner" data-device="web">
+                <div class="event-modal-head">
+                    <strong>Rewards Title</strong>
+                </div>
+                <div class="event-modal-body">
+                    <div class="col-3">
+                        <div class="img-box">
+                            <img class="event-box-img" src="./assets/images/event_01/title.webp" alt="">
+                            <strong class="evnet-highlight main-type">CNY 893,201.99</strong>
+                        </div>
+                        <div class="content-box">
+                            <div class="event-time">
+                                <i class="icon-time"></i>
+                                <span>Ending in</span>
+                                <strong>2d 11h 10m 30s</strong>
+                            </div>
+                            <div class="event-index">
+                                <div class="head">
+                                    <strong class="title">Rewards Info</strong>
+                                </div>
+                                <div class="body">
+                                    <div class="item">
+                                        <span class="text">Prize Pool</span>
+                                        <span class="value">$ 10,000 Free</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">Prize Pool</span>
+                                        <span class="value">$ 10,000 Free</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">Prize Pool</span>
+                                        <span class="value">$ 10,000 Free</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">Prize Pool</span>
+                                        <span class="value">$ 10,000 Free</span>
+                                    </div>
+                                    <div class="item event-details" id="details2">
+                                        <div class="summary" onclick="openDetail('#details2','#modal-2 .inner')">
+                                            <span class="text">Terms & conditions</span>
+                                        </div>
+                                        <div class="detail">
+                                            <ol>
+                                                <li>If a player appears on more than one leaderboard, the player
+                                                    will be
+                                                    able to win more than one prize. The prize will be remitted in
+                                                    72
+                                                    hours
+                                                    after each tournament round ends, please check changes in the
+                                                    player’s
+                                                    wallet balance.</li>
+                                                <li>Players will be able to check their rank, rules, and terms
+                                                    through
+                                                    the
+                                                    “Tournament” icon available in games.</li>
+                                                <li>If there are two or more players with identical win scores, the
+                                                    player
+                                                    who scores it first will get a higher position on the
+                                                    leaderboard.
+                                                </li>
+                                                <li>QQEvent reserves the right to disqualify a player or group of
+                                                    players if
+                                                    being found to use dishonest methods, cheat or intimidate other
+                                                    players/operators, or found to be abusing </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile -->
+            <div class="event-modal-head" data-device="mobile">
+                <strong class="title">Rewards Info</strong>
+            </div>
+            <div class="img-box modal-rwd-type" data-device="mobile">
+                <img class="event-box-img" src="./assets/images/event_01/title.webp" alt="">
+                <strong class="evnet-highlight main-type">CNY 893,201.99</strong>
+            </div>
+            <div class="event-time" data-device="mobile">
+                <i class="icon-time"></i>
+                <span>Ending in</span>
+                <strong>2d 11h 10m 30s</strong>
+            </div>
+            <div class="event-modal-body" data-device="mobile">
+                <div class="event-index">
+                    <div class="modal-tab">
+                        <a class="tab active" href="">Rewards Info</a>
+                    </div>
+                    <div class="inner">
+                        <div class="body">
+
+                            <div class="item">
+                                <span class="text">Prize Pool</span>
+                                <span class="value">$ 10,000 Free</span>
+                            </div>
+                            <div class="item">
+                                <span class="text">Prize Pool</span>
+                                <span class="value">$ 10,000 Free</span>
+                            </div>
+                            <div class="item">
+                                <span class="text">Prize Pool</span>
+                                <span class="value">$ 10,000 Free</span>
+                            </div>
+                            <div class="item">
+                                <span class="text">Prize Pool</span>
+                                <span class="value">$ 10,000 Free</span>
+                            </div>
+                            <div class="item">
+                                <span class="text">Prize Pool</span>
+                                <span class="value">$ 10,000 Free</span>
+                            </div>
+                            <div class="item">
+                                <span class="text">Prize Pool</span>
+                                <span class="value">$ 10,000 Free</span>
+                            </div>
+                            <div class="item">
+                                <span class="text">Prize Pool</span>
+                                <span class="value">$ 10,000 Free</span>
+                            </div>
+                            <div class="item event-details" id="details2">
+                                <div class="summary" onclick="openDetail('#details2','#modal-2 .inner')">
+                                    <span class="text">Terms & conditions</span>
+                                </div>
+                                <div class="detail">
+                                    <ol>
+                                        <li>If a player appears on more than one leaderboard, the player
+                                            will be
+                                            able to win more than one prize. The prize will be remitted in
+                                            72
+                                            hours
+                                            after each tournament round ends, please check changes in the
+                                            player’s
+                                            wallet balance.</li>
+                                        <li>Players will be able to check their rank, rules, and terms
+                                            through
+                                            the
+                                            “Tournament” icon available in games.</li>
+                                        <li>If there are two or more players with identical win scores, the
+                                            player
+                                            who scores it first will get a higher position on the
+                                            leaderboard.
+                                        </li>
+                                        <li>QQEvent reserves the right to disqualify a player or group of
+                                            players if
+                                            being found to use dishonest methods, cheat or intimidate other
+                                            players/operators, or found to be abusing </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group fixed-bottom" data-device="mobile">
+                <button class="btn primary full-width">抢红包</button>
+                <button class="modal-close-btn" onclick="modal('#modal-2', false)">
+                    <i class="icon-close"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- mobile language menu -->
+    <div class="modal" id="language" data-device="mobile">
+        <div class="mob-menu">
+            <span class="mob-menu-deco"><i class="icon-arrow"></i></span>
+            <ul class="mob-list" id="language">
+                <li>
+                    <a class="mob-list-item">
+                        <span class="flag en-US"></span>English
+                    </a>
+                </li>
+                <li>
+                    <a class="mob-list-item">
+                        <span class="flag zh-CN"></span>简体中文
+                    </a>
+                </li>
+                <li>
+                    <a class="mob-list-item">
+                        <span class="flag id-ID"></span>Bahash Indonesia
+                    </a>
+                </li>
+                <li>
+                    <a class="mob-list-item">
+                        <span class="flag vi-VN"></span>Việt Ngữ
+                    </a>
+                </li>
+                <li>
+                    <a class="mob-list-item">
+                        <span class="flag ms-MY"></span>Malaysia
+                    </a>
+                </li>
+                <li>
+                    <a class="mob-list-item">
+                        <span class="flag th-TH"></span>ภาษาไทย
+                    </a>
+                </li>
+                <li>
+                    <a class="mob-list-item">
+                        <span class="flag ko-KR"></span>Korea
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./assets/module/flatpickr/flatpickr.js"></script>
+<script src="./assets/js/main.js?v=20230417"></script>
+
+</html>

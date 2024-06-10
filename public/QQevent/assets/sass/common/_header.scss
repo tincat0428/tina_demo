@@ -1,0 +1,100 @@
+header {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    @extend %transition-03s;
+
+    &.hidden {
+        opacity: 0;
+    }
+}
+.nav {
+    height: var(--header-height);
+    background: var(--main-color);
+
+    .container {
+        height: 100%;
+        @include flex;
+        gap: rem(28);
+    }
+}
+
+.nav-logo {
+    height: rem(40);
+    display: block;
+    margin-right: auto;
+
+    img {
+        object-fit: contain;
+        height: 100%;
+    }
+}
+
+%nav-list-active {
+    pointer-events: initial;
+    padding: rem(6) rem(4);
+    max-height: 100vh;
+    opacity: 1;
+}
+.nav-user {
+    position: relative;
+    height: 100%;
+
+    &:hover {
+        .nav-list {
+            @extend %nav-list-active;
+        }
+    }
+}
+.nav-user-btn {
+    @include flex;
+    height: 100%;
+    font-size: rem(13);
+    color: #fff;
+    gap: rem(10);
+
+    .icon-admin {
+        font-size: rem(28);
+    }
+
+    .icon-arrow {
+        display: block;
+        font-size: rem(6);
+        transform-origin: right;
+    }
+}
+.nav-list {
+    @include absolute(calc(100% - rem(10)), null, 0);
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    padding: 0 rem(4);
+    max-height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    @extend %transition-02s;
+    pointer-events: none;
+    border: 0.5px solid #eaeaef;
+    box-shadow: 0px 1px 4px #2121341a;
+
+    &.active {
+        @extend %nav-list-active;
+    }
+}
+
+.nav-list-item {
+    color: #242424;
+    @include font(12, 20, 400);
+    padding: rem(10);
+    @extend %transition-015s;
+    @include flex(flex-start);
+    gap: 0.5em;
+    white-space: nowrap;
+    font-family: "Roboto";
+    cursor: pointer;
+
+    &:hover {
+        background: #e3e5f1;
+        border-radius: 4px;
+    }
+}

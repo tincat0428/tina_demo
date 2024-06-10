@@ -1,0 +1,209 @@
+$modal-radius: #{rem(20)};
+$modal-img-height: #{rem(290)};
+$modal-tab-heaight: #{rem(52)};
+
+%mask {
+    --mask-bg: #0f0332cc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: var(--mask-bg);
+    @include flex(center);
+}
+
+.modal {
+    @extend %mask;
+    @extend %transition-02s;
+    pointer-events: none;
+    background: transparent;
+
+    &.active {
+        background: var(--mask-bg);
+        pointer-events: initial;
+    }
+}
+
+.event-modal {
+    width: calc(100% - #{rem(200)});
+    max-width: rem(1170);
+    height: 80vh;
+    max-height: rem(650);
+    box-shadow: 0px 1px 14px 0px #00000075;
+    padding: rem(30) rem(12);
+    color: #fff;
+    border-radius: $modal-radius;
+    position: relative;
+    transform: translateY(100vh);
+    @extend %transition-03s;
+
+    .inner {
+        max-height: 100%;
+        overflow: auto;
+        padding: 0 rem(12);
+
+        &::-webkit-scrollbar {
+            width: 4px;
+            border-radius: 4px;
+            background-color: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #ffffffcc;
+            border-radius: 4px;
+        }
+    }
+
+    .evnet-highlight {
+        position: initial;
+    }
+
+    .event-time {
+        margin: rem(24) 0;
+    }
+
+    > * {
+        z-index: 1;
+        position: relative;
+    }
+
+    @at-root .mobile #{&} {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-radius: rem(40) rem(40) 0 0;
+        height: calc(100vh - var(--header-height));
+        max-height: initial;
+        overflow: hidden;
+
+        .inner {
+            padding: initial;
+            max-height: calc(100vh - var(--header-height) - $modal-img-height - $modal-tab-heaight - #{rem(190)});
+        }
+    }
+
+    @at-root .modal.active #{&} {
+        transform: translateY(0);
+    }
+}
+
+.event-modal-head {
+    @include font(15, 18, 500);
+    @include flex(center);
+    margin-bottom: rem(20);
+}
+
+.event-modal-body {
+    @include flex(center, flex-start);
+    gap: rem(30);
+
+    .event-box-img {
+        max-height: rem(250);
+    }
+
+    .btn {
+        margin: rem(10) auto;
+    }
+
+    .evnet-highlight.main-type {
+        min-width: rem(300);
+        margin: 0;
+        @include absolute(null, 0, 0, 0);
+        margin: 0 auto;
+    }
+
+    .event-more {
+        position: initial;
+        clip-path: initial;
+
+        > * {
+            opacity: initial;
+        }
+    }
+
+    .event-more-content {
+        height: calc(100vh - $modal-img-height - #{rem(250)});
+    }
+
+    @at-root .mobile #{&} {
+        display: block;
+    }
+}
+
+[class^="col-"] {
+    max-width: rem(640);
+}
+.col-5 {
+    flex: 5;
+}
+.col-4 {
+    flex: 4;
+}
+.col-3 {
+    flex: 3;
+}
+.col-2 {
+    flex: 2;
+}
+
+.event-modal-bg {
+    width: 100%;
+    @include absolute;
+    z-index: 0;
+    opacity: 0.3;
+    border-radius: $modal-radius $modal-radius 0 0;
+
+    @at-root .mobile #{&} {
+        width: auto;
+        height: $modal-img-height;
+    }
+}
+
+.modal-close-btn {
+    border-radius: rem(10);
+    box-shadow: 0px 3px 8px 0px #0000002b;
+    width: rem(40);
+    aspect-ratio: 1/1;
+    background: #000;
+    background: #ffffffd9;
+    @include absolute(0, calc(100% + #{rem(10)}));
+
+    i {
+        @include font(16);
+        color: #1e2330;
+    }
+
+    @at-root .mobile #{&} {
+        height: rem(60);
+        width: rem(60);
+
+        i {
+            @include font(24);
+        }
+    }
+}
+
+// mobile components
+.modal-tab {
+    height: $modal-tab-heaight;
+    @include flex;
+    border-radius: rem(16) rem(16) 0 0;
+    background: #00000029;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+
+    .tab {
+        height: 100%;
+        flex: 1;
+        @include flex(center);
+        text-transform: uppercase;
+
+        &.active {
+            background: #00000057;
+            color: #49ec81;
+        }
+    }
+}

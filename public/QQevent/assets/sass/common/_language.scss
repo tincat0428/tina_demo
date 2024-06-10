@@ -1,0 +1,125 @@
+.flag {
+    width: 34px;
+    aspect-ratio: 17/10;
+    background-size: contain;
+    background-position: center;
+    display: block;
+    background-repeat: no-repeat;
+
+    &.en-US {
+        background-image: url(../images/flag/en.svg);
+    }
+
+    &.zh-CN {
+        background-image: url(../images/flag/cn.svg);
+    }
+
+    &.zh-HK {
+        background-image: url(../images/flag/hk.svg);
+    }
+
+    &.id-ID {
+        background-image: url(../images/flag/id.svg);
+    }
+
+    &.ms-MY {
+        background-image: url(../images/flag/my.svg);
+    }
+
+    &.vi-VN {
+        background-image: url(../images/flag/vn.svg);
+    }
+
+    &.th-TH {
+        background-image: url(../images/flag/th.svg);
+    }
+
+    &.ko-KR {
+        background-image: url(../images/flag/kr.svg);
+    }
+}
+
+.language-menu {
+    height: 100%;
+    @include flex(center);
+    
+    .default {
+        display: block;
+    }
+
+    &:hover {
+        .nav-list {
+            @extend %nav-list-active;
+        }
+    }
+}
+
+.mob-menu {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-radius: rem(20) rem(20) 0 0;
+    padding: rem(40) rem(20);
+    background: #fff;
+    transform: translateY(100vh);
+    @extend %transition-03s;
+
+    @at-root .modal.active #{&} {
+        transform: translateY(0);
+    }
+}
+
+.mob-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: rem(30);
+
+    li {
+        justify-self: center;
+    }
+}
+
+.mob-list-item {
+    text-align: center;
+    @include font(12, 20, 400);
+    color: #242424;
+    @include flex(flex-start);
+    flex-direction: column;
+    font-family: "Roboto";
+
+    .flag {
+        width: rem(50);
+        margin-bottom: rem(10);
+    }
+
+    white-space: nowrap;
+}
+
+.mob-menu-deco {
+    width: rem(100);
+    height: rem(40);
+    @include absolute(null, 0, 0, 100%);
+    margin: 0 auto;
+    display: block;
+    @include flex(center);
+    padding-top: rem(15);
+
+    i {
+        z-index: 1;
+        font-size: rem(14);
+        display: block;
+    }
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        transform: perspective(10px) rotateX(5deg);
+        border-radius: rem(15) rem(15) 0 0;
+        background: #fff;
+        z-index: 0;
+        @include absolute;
+    }
+}

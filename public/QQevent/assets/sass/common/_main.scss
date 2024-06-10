@@ -1,0 +1,297 @@
+// kv
+.KV {
+    display: block;
+    background: linear-gradient(180deg, #0d013c 0%, #e82ae0 100%);
+    width: 100%;
+    height: calc(100vw / 16 * 5);
+    max-height: rem(575);
+    font-family: "Montserrat";
+    position: relative;
+    padding: rem(30) 0;
+    overflow: hidden;
+
+    .container {
+        @include flex($alignItem: stretch);
+        z-index: 3;
+        position: relative;
+        height: 100%;
+    }
+
+    .content {
+        flex: 2;
+        padding-top: 6vw;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 100%;
+        background: url(../images/hero-building.webp) bottom left/contain no-repeat;
+        @include absolute(8%);
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 100%;
+        background: url(../images/ray-shape.webp) center right/contain no-repeat;
+        @include absolute(0, 40%);
+        z-index: 0;
+        animation: light-spin 15s linear infinite;
+    }
+
+    @at-root .mobile #{&} {
+        aspect-ratio: initial;
+        height: auto;
+        padding: rem(20) 0 rem(100);
+
+        &::before {
+            width: 100%;
+            top: 0;
+        }
+
+        &::after {
+            display: none;
+            background: initial;
+        }
+    }
+}
+
+.kv-img {
+    flex: 3;
+    max-width: rem(788);
+    max-height: 100%;
+    pointer-events: none;
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        max-height: 100%;
+    }
+}
+
+.kv-heading {
+    @include font(100, 120, 700);
+    color: #fff;
+    text-shadow: 0px 3px 6px #0000003d;
+    margin-bottom: rem(20);
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    @at-root .mobile #{&} {
+        text-align: center;
+        font-size: clamp(2vw, rem(80), 15vw);
+        line-height: rem(80);
+    }
+}
+
+.kv-text {
+    @include font(26, 34, 700);
+    color: #f3ba35;
+
+    @at-root .mobile #{&} {
+        text-align: center;
+        @include font(25, 30, 700);
+    }
+}
+
+.kv-deco {
+    @include absolute(null, 0, null, 0);
+    display: block;
+    font-size: 14vw;
+
+    &.front {
+        color: #120333;
+        z-index: 2;
+        margin-bottom: -5px;
+    }
+    &.back {
+        z-index: 1;
+        color: #5e1a75;
+    }
+}
+
+@keyframes light-spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// index
+.index {
+    background: url(../images/main-bg.webp) top/100% no-repeat;
+    padding: rem(47) 0;
+    @extend %transition-02s;
+
+    &.hidden {
+        opacity: 0;
+    }
+
+    @at-root .mobile #{&} {
+        padding: rem(15) 0;
+        background: initial;
+    }
+}
+.index-heading {
+    @include font(20, 24, 700);
+    margin-bottom: rem(26);
+    color: #fff;
+}
+
+// button
+.btn {
+    border-radius: 6px;
+    @include font(15, 18, 700);
+    padding: 0 rem(10);
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    display: block;
+    height: rem(46);
+    min-width: rem(235);
+
+    i {
+        font-size: 1.4em;
+        vertical-align: bottom;
+        margin-right: 0.2em;
+    }
+
+    &.full-width {
+        width: 100%;
+    }
+
+    &.small {
+        width: fit-content;
+        min-width: rem(114);
+        height: rem(36);
+        @include font(13, 16);
+    }
+
+    &.primary {
+        background: #47c773;
+        color: #fff;
+        text-shadow: 0px 1px 0px #0000003d;
+
+        @include desktopHover {
+            filter: contrast(1.5);
+        }
+    }
+    &.secondary {
+        background: #562ef5;
+        color: #fff;
+
+        @include desktopHover {
+            filter: contrast(1.5);
+        }
+    }
+    &.download {
+        background: #fffde8cc;
+        color: #242424;
+
+        @include desktopHover {
+            filter: contrast(1.5);
+        }
+    }
+
+    @at-root .mobile #{&} {
+        height: rem(60);
+        @include font(20, 25);
+
+        &.small {
+            height: rem(45);
+            @include font(18, 24);
+        }
+    }
+}
+
+.btn-group {
+    @include flex(center);
+    gap: rem(10);
+
+    .modal-close-btn {
+        position: initial;
+    }
+
+    &.fixed-bottom {
+        @include absolute(null, rem(20), rem(20), rem(30));
+    }
+}
+
+// typographic
+%typo-common {
+    font-family: "Roboto";
+    color: #242424;
+    &.white {
+        color: #fff;
+    }
+}
+
+.heading {
+    @include font(20, 24, 700);
+    @extend %typo-common;
+    margin-bottom: rem(26);
+}
+
+.sub-heading {
+    @extend %typo-common;
+    @include font(16, 19, 700);
+    margin-bottom: rem(24);
+
+    @at-root .mobile #{&} {
+        @include font(20, 24);
+    }
+}
+
+.text {
+    @extend %typo-common;
+    @include font(13, 16, 500);
+}
+
+.txt-center {
+    text-align: center;
+}
+.txt-left {
+    text-align: left;
+}
+.txt-right {
+    text-align: right;
+}
+
+// component
+.tooltip {
+    width: fit-content;
+    @include font(12, 14, 400);
+    color: #f3f4f5;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+    background: #0e0e0ea1;
+    padding: rem(8) rem(12);
+    border-radius: rem(4);
+    transition: opacity 0.15s ease-in;
+    z-index: 999;
+    transform: translateX(-25%);
+    white-space: nowrap;
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+// animate
+.fade-in {
+    animation: fadeIn ease-in 0.3s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
